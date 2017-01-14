@@ -1,0 +1,15 @@
+@mixin ellipsis($clamp:3){
+	@if $clamp == 1 {
+		text-overflow: ellipsis;
+		-o-text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+	}
+	@else{
+		overflow : hidden;
+		text-overflow: ellipsis;
+		display: -webkit-box;
+		-webkit-line-clamp: $clamp;
+		-webkit-box-orient: vertical;
+	}
+}

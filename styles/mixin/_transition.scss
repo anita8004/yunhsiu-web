@@ -1,0 +1,14 @@
+@mixin transition($prop,$time:.5s,$delay:0s,$ease:$easeOutSine){
+  @if length($prop) == 4{
+    transition: nth($prop, 1) $time $delay $ease,nth($prop, 2) $time $delay $ease,nth($prop, 3) $time $delay $ease,nth($prop, 4) $time $delay $ease;
+  }
+  @else if length($prop) == 3{
+    transition: nth($prop, 1) $time $delay $ease,nth($prop, 2) $time $delay $ease,nth($prop, 3) $time $delay $ease;
+  }
+  @else if length($prop) == 2{
+    transition: nth($prop, 1) $time $delay $ease,nth($prop, 2) $time $delay $ease;
+  }
+  @else {
+    transition: nth($prop, 1) $time $delay $ease;
+  }
+}

@@ -1,0 +1,18 @@
+@mixin center($top:0){
+  @if $top == 50% {
+    position: absolute;
+    top: $top;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: translateY(-50%);
+  }
+  @else {
+    position: absolute;
+    top: $top;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+  }
+}

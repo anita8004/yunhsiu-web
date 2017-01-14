@@ -1,0 +1,10 @@
+@mixin circle($w,$h){
+  display: block;
+  width: $w;
+  height: $h;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  line-height: $h;
+}

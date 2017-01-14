@@ -1,0 +1,6 @@
+$delay: d!default;
+@for $i from 1 through 10 {
+	.#{$delay}#{$i} {
+		animation-delay: $i * 0.1s;
+	}
+}

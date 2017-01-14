@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+/*font*/
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Hind SemiBold'), local('Hind-SemiBold'), url(https://fonts.gstatic.com/s/hind/v6/HMitXFBPwJyXZfGm6rEhuvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+02BC, U+0900-097F, U+1CD0-1CF6, U+1CF8-1CF9, U+200B-200D, U+20A8, U+20B9, U+25CC, U+A830-A839, U+A8E0-A8FB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Hind SemiBold'), local('Hind-SemiBold'), url(https://fonts.gstatic.com/s/hind/v6/-H4xgvCtDmIfFNvmoAPAKvY6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Hind';
+  font-style: normal;
+  font-weight: 600;
+  src: local('Hind SemiBold'), local('Hind-SemiBold'), url(https://fonts.gstatic.com/s/hind/v6/A2xpLU2z2kq5byuh5bkohg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+/*color*/
+$g: #63cea2; //green
+$r: #C30010; //red
+$mc:$g;
+
+.red{
+  color: $r;
+}
+
+html.msie{overflow: hidden;}
+html.msie body{overflow: auto;}
+
+html,body{
+  font-family: 'Hind',"微軟正黑體",Arial,"蘭亭黑 - 繁","黑體 - 繁",sans-serif;
+  line-height: 1.5;
+  letter-spacing: .1em;
+  font-size: 16px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  color: #333;
+}
+
+@media (max-width: 480px){
+  html,body{
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+body{
+  opacity: 0;
+  .mobile &{
+    opacity: 1;
+    animation-name: none;
+  }
+  .no-cssanimations &,.no-js &{
+    opacity: 1;
+    animation-name: none;
+  }
+}
+
+.wrapper{
+  min-height: 100%;
+}
+
+#main {
+  width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+.container{
+  max-width: 100%;
+}
+
+/*img*/
+
+img{
+  max-width: 100%;
+}
+
+/*特效*/
+
+.wow {
+    animation-fill-mode: both;
+    &[class*='fadeIn']{
+        opacity: 0;
+    }
+}
+.no-js,
+.no-cssanimations {
+    .wow {
+        opacity: 1;
+        animation-name: none;
+    }
+}
+/*style*/
+.ovh {
+    overflow: hidden;
+}
+.wrapper{
+    overflow: hidden;
+}
+.text-hide {
+    margin: 0;
+}
+
+a[href],
+button,
+input,
+select,
+textarea {
+    outline: 0;
+    text-decoration: none;
+    border: 0;
+}
+
+input,
+select,
+textarea{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+select{
+  appearance:none;
+  -moz-appearance:none;
+  -webkit-appearance:none;
+}
+
+textarea{
+  resize: none;
+}
+
+::placeholder{
+  color: #413B3B;
+}
+
+// a[href]{
+//   transition: color .3s $easeInOutSine;
+// }
+
+label.error{
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 16px;
+    line-height: 40px;
+    vertical-align: top;
+    color: $r;
+}
+
+ul,
+ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.btn{
+  display: inline-block;
+  text-align: center;
+  background-color: $mc;
+  color: #fff;
+}
+
+
+/*fancy box*/
+.fancybox-close{
+  background-image: none;
+  background-color: $mc;
+  text-align: center;
+  line-height: 36px;
+  text-align: center;
+  border-radius: 50%;
+  &:before{
+    display: block;
+    content: "\E808";
+    font-family: "icon";
+    font-size: 20px;
+    color: #fff;
+    transform: rotate(0deg);
+    transition: transform .5s $easeOutSine;
+  }
+  &:hover{
+    &:before{
+      transform: rotate(359deg);
+      transition: transform .5s $easeOutSine;
+    }
+  }
+}
+
+
+/*留白*/
+
+.p3 {
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.pt3 {
+    padding-top: 3%;
+}
+
+.pb3 {
+    padding-bottom: 3%;
+}
+
+.p5 {
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.pt5 {
+    padding-top: 5%;
+}
+
+.pb5 {
+    padding-bottom: 5%;
+}
+
+@media (max-width: 768px) {
+    .p3 {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    .pt3 {
+        padding-top: 40px;
+    }
+    .pb3 {
+        padding-bottom: 40px;
+    }
+    .p5 {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+    .pt5 {
+        padding-top: 60px;
+    }
+    .pb5 {
+        padding-bottom: 60px;
+    }
+}
+
+/*icon*/
+.icon{
+  display: inline-block;
+  vertical-align: middle;
+}
+// .icon-user{
+//   background: url(images/icon/login.png) center no-repeat;
+//   width: 24px;
+//   height: 24px;
+//   background-size: contain;
+// }
