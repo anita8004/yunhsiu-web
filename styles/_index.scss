@@ -61,7 +61,7 @@
         opacity: 0;
         transition:opacity .5s $easeInOutCubic,top .5s $easeInOutCubic;
         .icon{
-          display: block;
+          display: inline-block;
           width: 50px;
           height: 50px;
           border: 1px solid #fff;
@@ -69,9 +69,15 @@
           text-align: center;
           line-height: 50px;
           color: #fff;
-          margin-left: auto;
-          margin-right: auto;
+          margin-left: 5px;
+          margin-right: 5px;
           font-size: 1.11111111rem;
+          background-color: transparent;
+          transition:background-color .5s $easeInOutSine,color .5s $easeInOutSine;
+          &:hover{
+            background-color: #fff;
+            color: #333;
+          }
         }
       }
       &:before{
@@ -111,3 +117,10 @@
   }
 }
 
+@media (max-width: 480px){
+  .current-project{
+    .item{
+      width: 99%;
+    }
+  }
+}

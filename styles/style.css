@@ -414,7 +414,7 @@ ol {
   transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1), top 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .current-project .item .pic .cover .icon {
-  display: block;
+  display: inline-block;
   width: 50px;
   height: 50px;
   border: 1px solid #fff;
@@ -422,9 +422,15 @@ ol {
   text-align: center;
   line-height: 50px;
   color: #fff;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5px;
+  margin-right: 5px;
   font-size: 1.11111111rem;
+  background-color: transparent;
+  transition: background-color 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95), color 0.5s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+.current-project .item .pic .cover .icon:hover {
+  background-color: #fff;
+  color: #333;
 }
 .current-project .item .pic:before {
   display: block;
@@ -456,5 +462,10 @@ ol {
 @media (max-width: 768px) {
   .current-project .item {
     width: 48%;
+  }
+}
+@media (max-width: 480px) {
+  .current-project .item {
+    width: 99%;
   }
 }
