@@ -83,6 +83,7 @@
             <div class="pic">
               <div class="cover">
                 <a data-fancybox="gallery" href="styles/images/project/project5.jpg" class="icon icon-search"></a>
+                <a href="http://www.gotrend.com.tw/" class="icon icon-link" target="_blank"></a>
               </div>
               <img src="styles/images/project/project5.jpg" alt="Yunhsiu">
             </div>
@@ -100,31 +101,72 @@
           <div class="item">
             <div class="pic">
               <div class="cover">
-                <a data-fancybox="gallery" href="styles/images/project/project7.png" class="icon icon-search"></a>
+                <a data-fancybox="gallery" href="styles/images/project/project7.jpg" class="icon icon-search"></a>
                 <a href="http://tw.8way.com.tw/" class="icon icon-link" target="_blank"></a>
               </div>
-              <img src="styles/images/project/project7.png" alt="Yunhsiu">
+              <img src="styles/images/project/project7.jpg" alt="Yunhsiu">
             </div>
             <div class="text">八方雲集</div>
           </div>
           <div class="item">
             <div class="pic">
               <div class="cover">
-                <a data-fancybox="gallery" href="styles/images/project/project8.png" class="icon icon-search"></a>
+                <a data-fancybox="gallery" href="styles/images/project/project8.jpg" class="icon icon-search"></a>
                 <a href="http://www.tcygroup.com/index.php" class="icon icon-link" target="_blank"></a>
               </div>
-              <img src="styles/images/project/project8.png" alt="Yunhsiu">
+              <img src="styles/images/project/project8.jpg" alt="Yunhsiu">
             </div>
             <div class="text">采妍</div>
           </div>
           <div class="item">
             <div class="pic">
               <div class="cover">
-                <a data-fancybox="gallery" href="styles/images/project/project9.png" class="icon icon-search"></a>
+                <a data-fancybox="gallery" href="styles/images/project/project9.jpg" class="icon icon-search"></a>
+                <a href="http://118.163.57.23/" class="icon icon-link" target="_blank"></a>
               </div>
-              <img src="styles/images/project/project9.png" alt="Yunhsiu">
+              <img src="styles/images/project/project9.jpg" alt="Yunhsiu">
             </div>
-            <div class="text">正隆形象頁</div>
+            <div class="text">正隆</div>
+          </div>
+          <div class="item">
+            <div class="pic">
+              <div class="cover">
+                <a data-fancybox="gallery" href="styles/images/project/project10.jpg" class="icon icon-search"></a>
+                <a href="https://www.lekumabike.com/" class="icon icon-link" target="_blank"></a>
+              </div>
+              <img src="styles/images/project/project10.jpg" alt="Yunhsiu">
+            </div>
+            <div class="text">樂酷馬</div>
+          </div>
+          <div class="item">
+            <div class="pic">
+              <div class="cover">
+                <a data-fancybox="gallery" href="styles/images/project/project11.jpg" class="icon icon-search"></a>
+                <a href="http://www.senhwabiosciences.com/tw/" class="icon icon-link" target="_blank"></a>
+              </div>
+              <img src="styles/images/project/project11.jpg" alt="Yunhsiu">
+            </div>
+            <div class="text">生華</div>
+          </div>
+          <div class="item">
+            <div class="pic">
+              <div class="cover">
+                <a data-fancybox="gallery" href="styles/images/project/project12.jpg" class="icon icon-search"></a>
+                <a href="http://www.splendor-taichung.com.tw/index.php" class="icon icon-link" target="_blank"></a>
+              </div>
+              <img src="styles/images/project/project12.jpg" alt="Yunhsiu">
+            </div>
+            <div class="text">金典酒店</div>
+          </div>
+          <div class="item">
+            <div class="pic">
+              <div class="cover">
+                <a data-fancybox="gallery" href="styles/images/project/project13.jpg" class="icon icon-search"></a>
+                <a href="http://www.wellcare-global.com" class="icon icon-link" target="_blank"></a>
+              </div>
+              <img src="styles/images/project/project13.jpg" alt="Yunhsiu">
+            </div>
+            <div class="text">暐康</div>
           </div>
         </div>
       </div>
